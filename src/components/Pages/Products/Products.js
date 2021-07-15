@@ -11,7 +11,7 @@ const Products = () => {
                 <Fade bottom duration={2500} distance="40px">
                     <div className=" d-flex">
 
-                        <div className='container-fluid row'>
+                        <div className='container row'>
                             <div className="card mx-auto col-md-3 mt-5"> <img className='mx-auto img-thumbnail' src="https://i.imgur.com/pjITBzX.jpg" alt="" width="auto" height="auto" />
                                 <div className="card-body text-center mx-auto">
                                     <div className='cvp'>
@@ -21,7 +21,7 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='container-fluid'>
+                        <div className='container'>
                             <div className="card mx-auto col-md-3  mt-5"> <img className='mx-auto img-thumbnail' src="https://i.imgur.com/pjITBzX.jpg" alt="" width="auto" height="auto" />
                                 <div className="card-body text-center mx-auto">
                                     <div className='cvp'>
