@@ -1,0 +1,102 @@
+body {
+    overflow-x: hidden;
+}
+.single-card {
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+    justify-content: center;
+}
+
+.single-card .text-content,
+.single-card::after {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    border-radius: 5%;
+    align-items: center;
+}
+.single-card::after {
+    content: "";
+    display: block;
+    background-color: rgb(175, 29, 66);
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transform: rotate3d(-1, 1, 0, 100deg);
+    transition: 0.4s;
+}
+
+.single-card:hover::after {
+    opacity: 0.9;
+    transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.single-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-content {
+    top: 20%;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.3s;
+    text-align: center;
+    color: #fff;
+    margin: 0 !important;
+}
+
+.text-content h4 {
+    font-family: Poppins, sans-serif;
+    margin-right: 5px !important;
+}
+.single-card:hover .text-content {
+    opacity: 1;
+    transform: translate(0, -50);
+    transition: 0.3s;
+}
+
+/* Btn Style */
+
+.btn-brand {
+    position: relative;
+    background-color: #f36412;
+    border: none;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 15px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.btn-brand:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #97b1bf;
+    color: #000;
+}
+
+.btn-brand:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.btn-brand:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
